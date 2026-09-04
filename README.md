@@ -55,8 +55,8 @@ pointing device so you can wipe them down without triggering anything.
   # po tej zmianie trzeba się ponownie zalogować
   ```
 
-- Dostępne są `python` oraz `xdg-terminal-exec`. Na domyślnej
-  instalacji Omarchy oba są już w `PATH`.
+- Dostępne są `python` oraz `setsid`. Na domyślnej instalacji
+  Omarchy oba są już w `PATH`.
 - Na Macach z Apple SPI klawiatura, gładzik i ewentualna mysz USB
   są wykrywane automatycznie. Skrypt pomija urządzenia, których
   nie da się bezpiecznie zablokować (np. przycisk zasilania, gniazdo
@@ -71,7 +71,7 @@ pointing device so you can wipe them down without triggering anything.
   # log out and back in for the group change to take effect
   ```
 
-- `python` and `xdg-terminal-exec` must be on `PATH`. Both ship with
+- `python` and `setsid` must be on `PATH`. Both ship with
   the default Omarchy install.
 
 ## How it works
