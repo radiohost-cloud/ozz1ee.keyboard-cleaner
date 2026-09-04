@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "ozz1ee.keyboard-cleaner",
+  "name": "Keyboard Cleaner",
+  "version": "0.1.0",
+  "author": "ozz1ee",
+  "description": "Keyboard Cleaner for Omalaunch",
+  "kinds": [
+    "extension"
+  ],
+  "entryPoints": {},
+  "omalaunch": {
+    "extensions": [
+      "omalaunch.json"
+    ]
+  }
+}

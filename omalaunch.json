@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "ozz1ee.keyboard-cleaner",
+  "capability": "ozz1ee.keyboard-cleaner",
+  "mode": "workflow",
+  "label": "Keyboard Cleaner",
+  "prefixes": [
+    "keyboard-cleaner"
+  ],
+  "icon": "󰌓",
+  "iconFont": "",
+  "description": "Block keyboard and pointer for safe cleaning",
+  "rootDescription": "Temporarily disable input so you can wipe the keyboard",
+  "requires": [
+    "python",
+    "setsid"
+  ],
+  "workflow": {
+    "items": [
+      {
+        "id": "select-duration",
+        "kind": "menu",
+        "label": "Cleaning Duration",
+        "items": [
+          {
+            "id": "duration-15",
+            "kind": "action",
+            "label": "15 seconds",
+            "command": [
+              "setsid",
+              "--fork",
+              "python",
+              "{extensionDir}/bin/keyboard-cleaner.py",
+              "15"
+            ]
+          },
+          {
+            "id": "duration-30",
+            "kind": "action",
+            "label": "30 seconds",
+            "command": [
+              "setsid",
+              "--fork",
+              "python",
+              "{extensionDir}/bin/keyboard-cleaner.py",
+              "30"
+            ]
+          },
+          {
+            "id": "duration-60",
+            "kind": "action",
+            "label": "1 minute",
+            "command": [
+              "setsid",
+              "--fork",
+              "python",
+              "{extensionDir}/bin/keyboard-cleaner.py",
+              "60"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
